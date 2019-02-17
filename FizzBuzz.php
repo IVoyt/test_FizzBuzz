@@ -6,15 +6,16 @@
 	for ($i = 0; $i < 100; $i++) {
 		switch ($i) {
 			case ($i % 3 == 0 && $i % 5 == 0):
-				echo $i . ' ' . $Fizz.$Buzz . "\n";
+				echo $Fizz . ' ' .$Buzz . "\n";
 				break;
 			case ($i % 3 == 0):
-				echo $i . ' ' . $Fizz . "\n";
+				echo $Fizz . "\n";
 				break;
 			case ($i % 5 == 0):
-				echo $i . ' ' . $Buzz . "\n";
+				echo $Buzz . "\n";
 				break;
+
+			default: echo $i . "\n"; break;
 		}
 	}
-
 ?>
